@@ -1,0 +1,63 @@
+:root {
+  --primaryBlue: #8576FF;
+  --accentBlue: #64748B;
+  --deleteRed: #F43F5E;
+  --completeBg: #D1FAE5;
+  --completeGreen: #10B981;
+  --progressBg: #DBEAFE;
+  --progressBlue: #3B82F6;
+  --textBlue: #334155;
+  --defaultWhite: #FFFFFF;
+  --headerBlack: #000000;
+  --searchIconLight: #94A3B8;
+  --searchPlaceholderLight: #CBD5E1;
+  --searchIconDark: #94A3B8;
+  --searchPlaceholderDark: #CBD5E1;
+  --darkCardBg: #484554;
+  --darkBg: #383544;
+  --primaryDark: #484554;
+  --toggleBgLight: #E2E8F0;
+  --selectLight: #FCF7FF;
+  --tableHeaderLight: #F1F5F9;
+  --tableHeaderDark: #6A6676;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--darkBg);
+    --text-color: var(--defaultWhite);
+    --card-bg: var(--darkCardBg);
+    --toggle-bg: var(--primaryBlue);
+    --toggle-button: var(--defaultWhite);
+    --select-hover: var(--selectLight);
+    --table-header-bg: var(--tableHeaderDark);
+    --sidebar-bg: var(--primaryDark);
+    --search-icon: var(--searchIconDark);
+    --search-placeholder: var(--searchPlaceholderDark);
+  }
+}
+body.light {
+  --background: var(--defaultWhite);
+  --text-color: var(--textBlue);
+  --card-bg: var(--defaultWhite);
+  --toggle-bg: var(--toggleBgLight);
+  --toggle-button: var(--defaultWhite);
+  --select-hover: var(--primaryBlue);
+  --table-header-bg: var(--tableHeaderLight);
+  --sidebar-bg: var(--tableHeaderLight);
+  --search-icon: var(--searchIconLight);
+  --search-placeholder: var(--searchPlaceholderLight);
+}
+
+body.dark {
+  --background: var(--darkBg);
+  --text-color: var(--defaultWhite);
+  --card-bg: var(--darkCardBg);
+  --toggle-bg: var(--primaryBlue);
+  --toggle-button: var(--defaultWhite);
+  --select-hover: var(--primaryBlue);
+  --table-header-bg: var(--tableHeaderDark);
+  --sidebar-bg: var(--primaryDark);
+  --search-icon: var(--searchIconDark);
+  --search-placeholder: var(--searchPlaceholderDark);
+}/*# sourceMappingURL=colors.css.map */

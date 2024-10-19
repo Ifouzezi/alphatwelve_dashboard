@@ -1,5 +1,23 @@
-@use '../utilities' as *;
+.cards {
+    display: flex;
 
-.card {
-    padding: rem(20);
+    &__box {
+        display: flex;
+        flex-direction: column;
+        width: 260px;
+        height: 88px;
+        padding: 16px 0px 0px 0px;
+        border-radius: 2px 0px 0px 0px;
+        border: 1px 0px 0px 0px;
+
+
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+        color: var(--accentBlue);
+    }
 }

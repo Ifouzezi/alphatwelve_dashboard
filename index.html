@@ -17,6 +17,87 @@
     <script defer src="/dist/script.js"></script>
 </head>
 <body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar__logo">
+                <img src="images/full-logo.svg" alt="Logo">
+            </div>
+            
+            <ul class="sidebar__menu">
+              <li class="sidebar__menu-item sidebar__menu-item--active">
+                <img src="images/home.svg" alt="Home Icon" class="sidebar__icon">
+                <span class="sidebar__text">Home</span>
+              </li>
+              <li class="sidebar__menu-item">
+                <img src="images/solar_calendar-linear.svg" alt="Events Icon" class="sidebar__icon">
+                <span class="sidebar__text">Events</span>
+              </li>
+              <li class="sidebar__menu-item">
+                <img src="images/solar_user-speak-rounded-linear.svg" alt="Speakers Icon" class="sidebar__icon">
+                <span class="sidebar__text">Speakers</span>
+              </li>
+              <li class="sidebar__menu-item">
+                <img src="images/solar_document-linear.svg" alt="Reports Icon" class="sidebar__icon">
+                <span class="sidebar__text">Reports</span>
+              </li>
+              <li class="sidebar__menu-item">
+                <img src="images/bell.svg" alt="Notifications Icon" class="sidebar__icon">
+                <span class="sidebar__text">Notifications</span>
+                <span class="sidebar__badge">3</span>
+              </li>
+              <li class="sidebar__menu-item">
+                <img src="images/double-chat-bubble.svg" alt="Messages Icon" class="sidebar__icon">
+                <span class="sidebar__text">Messages</span>
+              </li>
+              <li class="sidebar__menu-item">
+                <img src="images/settings-2.svg" alt="Settings Icon" class="sidebar__icon">
+                <span class="sidebar__text">Settings</span>
+              </li>
+            </ul>
+            
+            <div class="sidebar__footer">
+              <div class="sidebar__collapse">
+                <img src="images/double-chevron-left.svg" alt="Collapse Icon" class="sidebar__icon">
+                <span class="sidebar__text">Collapse</span>
+              </div>
+              
+              <div class="sidebar__dark-mode-toggle">
+                <input type="checkbox" id="darkMode" class="sidebar__dark-mode-checkbox">
+                <label for="darkMode" class="sidebar__dark-mode-label">Dark mode</label>
+              </div>
+              
+              <div class="sidebar__user-info">
+                <img src="profile.jpg" alt="User Avatar" class="sidebar__user-avatar">
+                <div class="sidebar__user-details">
+                  <p class="sidebar__user-name">Rudra Devi</p>
+                  <p class="sidebar__user-email">rudra.devi@gmail.com</p>
+                </div>
+              </div>
+            </div>
+        </div>
     
+        <!-- Main Content -->
+        <main class="main">
+        <section class="header">
+            <h2>Welcome! here’s your summary</h2>
+        </section>
+    
+            <section class="cards sectionContainer">
+                <div class="cards__box">
+                    <p class="cards__title">Total Points</p>
+                    <div class="cards__details">
+                        <p class="cards__num">
+                            100,000
+                        </p>
+                        <span class="status">
+                            +5.0%
+                        </span>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+    </div>
 </body>
 </html>

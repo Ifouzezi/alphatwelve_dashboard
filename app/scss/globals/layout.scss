@@ -1,0 +1,22 @@
+@use '../utilities' as *;
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+.sectionContainer {
+	padding: 0 rem(20);
+	max-width: rem(1076);
+	margin: 0 auto rem(46);
+
+	@include breakpoint(large) {
+		padding: 0;
+	}
+}

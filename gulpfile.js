@@ -1,5 +1,6 @@
 // Initialize modules
 const { src, dest, watch, series } = require('gulp');
+const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
@@ -14,7 +15,7 @@ const browsersync = require('browser-sync').create();
 // Sass Task
 function scssTask() {
   return src('app/scss/style.scss', { sourcemaps: true })
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError)) 
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(dest('dist', { sourcemaps: '.' }));
 }
